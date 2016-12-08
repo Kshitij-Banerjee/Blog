@@ -5,7 +5,7 @@ url: http://Kshitij-Banerjee.github.io/Blog
 permalink: ':title/'
 
 markdown: kramdown
-baseurl: "/Scribbles"
+baseurl: "/Blog"
 
 
 sass:
