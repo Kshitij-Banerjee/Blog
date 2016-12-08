@@ -6,7 +6,7 @@ author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
 img: "take_that_wallpaper___faces_by_edr_emz-d4lbnu4.jpg"
 date:   2015-11-22 12:12:12
-color: ff1744 
+color: ff1744
 ---
 
 How to create a Face Chronical.
