@@ -32,10 +32,15 @@ You'll need two softwares to do this. ImageSnap and Power Manager.
 
 1. Create a new file (shell) with the following name capture.sh in your home directory (~/capture_pic.sh) with the below contents.
 
-      `#!/bin/sh`
-      `cd ~/Downloads/ImageSnap-v0.2.5;`
-      `mkdir daily_pics;`
-      `[ -f ./daily_pics/`date "+%d_%m_%Y"`.png ] && echo "File exists" || ./ImageSnap ./daily_pics/`date "+%d_%m_%Y"`.png -w 5;`
+~~~~~~~~ ruby
+~~~~~~~
+#!/bin/sh
+
+cd ~/Downloads/ImageSnap-v0.2.5
+[ -f ~/Kshitij-Banerjee/Drive/daily_pics/`date "+%d_%m_%Y"`.png ] && echo "File exists" || ./ImageSnap ~/Kshitij-Banerjee/Drive/daily_pics/`date "+%d_%m_%Y"`.png -w 5
+exit 0;
+~~~~~~~
+~~~~~~~~
 
 2. Open the Terminal. (Cmd + Space), type Terminal.
 3. Run the command
