@@ -5,7 +5,6 @@
 <script src={{ "/js/jquery.min.js" | prepend: site.baseurl }}></script>
 <script>
 $(document).ready(function() {
-    $('.show-comments').on('click', function(){
           var disqus_shortname = '{{site.disqus-shortname}}'; 
 
           $.ajax({
@@ -15,8 +14,7 @@ $(document).ready(function() {
                   cache: true
           });
 
-          $(this).fadeOut();
-    });
+          $('.show-comments').fadeOut();
 });
 
 </script>
