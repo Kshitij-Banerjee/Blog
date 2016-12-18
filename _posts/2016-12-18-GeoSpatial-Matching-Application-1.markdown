@@ -57,10 +57,14 @@ Going bottom up.
   * Actor models are generally modeled as heirarchical structures. A parent actor will delegate tasks to its child actors and supervise them for failures. Tasks are broken down into fine grained activities.
   * Actor is a container for state, behaviour, Mailbox, Child Actors and Supervision Strategy. Actors lifecycle is also something you must control.
   * You may create actors using `ActorSystem.actorOf, ActorContext.actorOf` when they are in direct heirarchy or look them up using `ActorSystem.actorSelection`. The `ActorContext.actorSelection` can be used to start the lookup from the current actor instead of the root.
+* An Akka Actor occupies around 400-500 bytes, so theoretically you should be able to fit around 8.5 million on 4GB of heap!
+* Many akka actors may use the same thread.
+* Akka actors are generally injected in playFramework options using plugins.
 
-4 - Mobile UI's
+4 - Mobile UI's and Interactions
 ----------------------
 
+* The communication in terms of geoLocation objects is standardized in terms of [geoJson Objects](http://geojson.org/geojson-spec.html).
 * Google map apis
 * Openstreetmaps.org
 
