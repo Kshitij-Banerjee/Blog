@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to go about creating a geospatial matching application - A creators learning and a work in progress"
+title:  "Creating a geospatial matching application - Part 1"
 description: "A curiosity around geospatial applications leads me to wander such lands. This blog details the steps and things I did while creating my geo spatial matching application. WIP"
 author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
@@ -9,7 +9,7 @@ date:   2016-12-18
 color: 4c7aa9
 ---
 
-* I've been super curious on the internals and workings of geo spatial applications and the impact that they create. Here are my findings and rumblings on that topic
+* I've been super curious on the internals and workings of geo spatial applications and the impact that they create. Scribbles on the same.
 
 * I personally love it when apps can give me a realtime update of the status of my order / ride on a map.  It's just honest and true about the state of affairs and you have a clear picture of what's happening.
   I hence personally like such apps and tend to use them.
@@ -58,8 +58,12 @@ Going bottom up.
   * Actor is a container for state, behaviour, Mailbox, Child Actors and Supervision Strategy. Actors lifecycle is also something you must control.
   * You may create actors using `ActorSystem.actorOf, ActorContext.actorOf` when they are in direct heirarchy or look them up using `ActorSystem.actorSelection`. The `ActorContext.actorSelection` can be used to start the lookup from the current actor instead of the root.
 
+4 - Mobile UI's
+----------------------
+
+* Google map apis
+* Openstreetmaps.org
+
+More detailed post on this when I get to it. :)
 
 
-
-
-*.... WIP ... *
