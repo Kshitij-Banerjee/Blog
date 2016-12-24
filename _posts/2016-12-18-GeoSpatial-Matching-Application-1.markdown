@@ -28,7 +28,8 @@ color: 4c7aa9
 1 - The broad needs
 ------------------------
 Going bottom up.
-*  We'll need a *datastore* that can store and retrieve the location of object of interests at a blazing fast speed. Since this is a highly parallel scenario, such a datastore should support sharding and horizontally scale to our needs.
+
+* We'll need a *datastore* that can store and retrieve the location of object of interests at a blazing fast speed. Since this is a highly parallel scenario, such a datastore should support sharding and horizontally scale to our needs.
 * We'll need an efficient *algorithm to figure out which shard* a (lat,long) combination belongs to.
   * Algorithm should have a sense of proximity. We should be able to figure out the nearby objects given a (lat,lomg).
 * We'll need a *pub-sub* kind of model for communication between objects and viewers.
@@ -69,5 +70,3 @@ Going bottom up.
 * Openstreetmaps.org
 
 More detailed post on this when I get to it. :)
-
-
