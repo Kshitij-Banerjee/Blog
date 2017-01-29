@@ -6,7 +6,7 @@ author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
 img: "DevStack.jpeg"
 date:   2017-01-24
-color: 8c7aa9
+color: 002b36
 tags: Productivity, Laptop, Setup
 ---
 
