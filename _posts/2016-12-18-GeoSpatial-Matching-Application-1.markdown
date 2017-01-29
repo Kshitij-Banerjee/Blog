@@ -6,7 +6,7 @@ author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
 img: "Maps_geoSpatial_Imag.png"
 date:   2016-12-18
-color: 4c7aa9
+color: d33682
 ---
 
 * I've been super curious on the internals and workings of geo spatial applications and the impact that they create. Scribbles on the same.

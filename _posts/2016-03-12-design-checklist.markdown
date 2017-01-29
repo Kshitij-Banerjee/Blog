@@ -5,7 +5,7 @@ author: "Kshitij Banerjee"
 avatar: "img/authors/K_icon.png"
 description: "List of topics that you should check off in your design. A list I hope to keep updated"
 img: "Business-Checklist-ICV.jpg"
-color: 3f1653
+color: 6c71c4
 ---
 
   copiable direct link => [/2016/03/12/design-checklist.html](Blog/2016/03/12/design-checklist.html)

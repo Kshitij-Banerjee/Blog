@@ -7,7 +7,7 @@ avatar: "img/authors/K_icon.png"
 img : "tree.png"
 categories: Database
 categories: [Database, Reverse Engineering]
-color: 1976D2
+color: 268bd2
 ---
 
 How to recover data from raw .tokudb files.
