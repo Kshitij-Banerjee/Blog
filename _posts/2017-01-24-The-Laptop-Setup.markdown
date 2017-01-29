@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "The Classic Laptop Dev Stack"
-description: "The classic list of tools that I can't live without (and how to set them up)."
+title:  "The Classic Laptop Dev Tools"
+description: "The classic list of dev tools that I can't live without (and how to set them up)."
+name: "The classic list of dev tools that I can't live without (and how to set them up)."
 author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
 img: "DevStack.jpeg"
 date:   2017-01-24
 color: 002b36
 tags: Productivity, Laptop, Setup
+type: Productivity, Tools
 ---
 
 I've always invested in setting up my laptop so that I can be the most effecient at it (considering that I would be spending an enormous time at it).

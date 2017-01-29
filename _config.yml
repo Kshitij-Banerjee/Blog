@@ -1,9 +1,9 @@
 
 title: "Kshitij's Scribbles"
-description: Scratchpad for my thoughts
+description: Scratchpad for my thoughts. Mostly a Tech Blog
 url: http://Kshitij-Banerjee.github.io/Blog
 permalink: ':title/'
-
+author: Kshitij-Banerjee
 markdown: kramdown
 baseurl: "/Blog"
 
