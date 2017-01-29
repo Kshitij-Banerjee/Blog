@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "The Classic Laptop Dev Tools"
-description: "The classic list of dev tools that I can't live without (and how to set them up)."
-name: "The classic list of dev tools that I can't live without (and how to set them up)."
+title:  "The Classic Laptop Dev Configuration - Linux/Mac (Tutorial)"
+description: "The classic list of dev tools and configurations that I can't live without (and how to set them up)."
+name: "The classic list of dev tools and configurations that I can't live without (and how to set them up)."
 author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
 img: "DevStack.jpeg"
@@ -14,6 +14,8 @@ type: Productivity, Tools
 
 I've always invested in setting up my laptop so that I can be the most effecient at it (considering that I would be spending an enormous time at it).
 Here are some tools and tricks that I find priceless to my productivity.
+
+_{Note:}_ Throughout the way, I'll be linking to the official installation / setup guides for the detailed installation instructions rather than copying them here. Do open them in a new tab and continue from where you left.
 
 # 0 - The Prerequisites
 - - - - - - - - - - - - -
@@ -60,7 +62,9 @@ Here are some tools and tricks that I find priceless to my productivity.
 - Sure bash is great, but some of the zsh plugin's are just can't-live-without-stuff.
 - Install oh-my-zsh. [https://github.com/robbyrussell/oh-my-zsh](oh-my-zsh)
 - Install powerline if needed to fix the theme and appearance issues.
-- If you were able to install powerline. Checkout the jonathen zsh theme. `ZSH_THEME="jonathan"` (This probably doesn't work on linux)
+- If you were able to install powerline.
+    - Mac : Checkout the jonathen zsh theme. `ZSH_THEME="jonathan"` (This doesn't work on linux)
+    - Linux : Checkout `ZSH_THEME="agnoster"` for a look like the above.
 
 ### 1.2 Vim keys to your shell
 - Home row compute in shell with style
@@ -130,5 +134,8 @@ Here are some tools and tricks that I find priceless to my productivity.
  a - Vim for the browser - So you're hands stay home while surfing as well :)
 
 
-I'll keep adding as I encounter stuff, but hopefully now your desktop is a nice tone of solarized and your hands are much at ease. 
-Happy Computing. Ciao!
+`TODO : Add Tmux section`
+
+I'll keep adding as I encounter stuff, but hopefully now your desktop is a nice tone of solarized and your hands are much at ease.
+
+_Happy Computing. Ciao!_
