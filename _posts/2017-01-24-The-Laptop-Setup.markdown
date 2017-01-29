@@ -20,6 +20,7 @@ Here are some tools and tricks that I find priceless to my productivity.
 -----------------
 
 ![wristPain.jpg](../images/wristPain.jpg)
+
 - I began my journey as a _vimmer_ because of the wrist pain that I used to experience quite frequently.
 - I realized that much of it is because of all the movement between the mouse and the keyboard, the constant cramping of the pinky to go down that wretched control key also caused much of it.
 - I've gained tremendously ever since I've switched. No more aches. Faster typing. Faster actions.
@@ -36,6 +37,7 @@ Here are some tools and tricks that I find priceless to my productivity.
 ------------------------
 
 ![http://ethanschoonover.com/solarized/img/solarized-values-dark.png](http://ethanschoonover.com/solarized/img/solarized-values-dark.png)
+
 - You're going to spend a lot of time on your computer.
 - Solarized is a color scheme that is the right shade that soothes and feels good on the eyes in the day and night.
 - There is a solid amount of time this guy spent on getting the color scheme right. And I for one really thank him.
@@ -49,9 +51,10 @@ Here are some tools and tricks that I find priceless to my productivity.
 1.0 The terminal
 ----------------
 
+![http://devsnaps.herokuapp.com/images/zsh.jpg](http://devsnaps.herokuapp.com/images/zsh.jpg)
+
 ### 1.1 ZSH
 
-![http://devsnaps.herokuapp.com/images/zsh.jpg](http://devsnaps.herokuapp.com/images/zsh.jpg)
 - Sure bash is great, but some of the zsh plugin's are just can't-live-without-stuff.
 - Install oh-my-zsh. [https://github.com/robbyrussell/oh-my-zsh](oh-my-zsh)
 - Install powerline if needed to fix the theme and appearance issues.
@@ -90,6 +93,7 @@ Here are some tools and tricks that I find priceless to my productivity.
 ------------
 
 ![http://do.cooperteam.net/images/shot.png](http://do.cooperteam.net/images/shot.png)
+
 - If you've used a mac, the `spotlight` is something you've probably got used to. The friendly little being that gives you everything with `Cmd+Space`
 - Gnome-do is Spotlight Linux.
 - Bind it to the same setting (Alt+Space) after rebinding
@@ -111,6 +115,7 @@ Here are some tools and tricks that I find priceless to my productivity.
 ------------------
 
 ![../images/chrome-solarized.png](../images/chrome-solarized.png)
+
 - 5.1
 
   - Solarizing this happens as so:-
