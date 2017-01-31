@@ -44,11 +44,13 @@ Hereon refered to as **inversion of constraint solution**
   * Try some examples, if the above is difficult to validate.
 
 * So now we need to see if we can find a clever way to find the first left and right values lesser than the current value.
-* _To think_: If we have traversed the array partially say till i, how can the solution to i+1 be built?
+* _To think_: If we have traversed the array partially say till min_i, how can the solution to min_i+1 be built?
 
-* We need the first value less that i to its left.
-* Inverting the statement, **we need to ignore all values to the left of i that are greater (or equal) than i till the first match.**
-* _Corrollary_: Once a smaller value is found at j, all values between its left smaller value i are useless. Even for further calculations.
+* We need the first value less than min_i to its left.
+* Inverting the statement : we need to ignore all values to the left of min_i that are greater than min_i. We stop when we find the first value smaller than min_i  (i) . _The troughs in the curve hence become useless once we have crossed it_. In histogram , (2 4 3) => if 3 is min_i, 4 being larger is not of interest.
+* _Corrollary_: in a range (i,j). j being the min value we are considering..  all values between j and its left value i are useless. Even for further calculations.
+* Any histogram on the right with a min value larger than j, will be binded at j. The values of interest on the left form a monotonically increasing sequence with j being the largest value. (Values of interest here being possible values that may be of interest for the later array)
+
 * Since, we are travelling from left to right, for each min value/ current value -  we do not know whether the right side of the array will have an element smaller than it.
   * So we have to keep it in memory until we get to know this value is useless.
 * All this leads to a usage of our very own `stack` structure.
