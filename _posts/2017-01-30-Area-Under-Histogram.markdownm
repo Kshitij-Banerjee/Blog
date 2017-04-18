@@ -5,7 +5,7 @@ description: "A problem with a clever solution, with some insights to its constr
 name: "A problem with a clever solution, and the insights that I've gained from it"
 author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
-img: "histogram1.png"
+img: "histo_logo.jpg"
 date: 2017-01-30
 color: 2aa198
 tags: Algorithms, Data Structures
@@ -15,6 +15,7 @@ type: Algorithms, Data Structures
 ## Problem Statement:
 - - - - - - - - -
 _GfG quoted_: Find the largest rectangular area possible in a given histogram where the largest rectangle can be made of a number of contiguous bars. For simplicity, assume that all bars have same width and the width is 1 unit.
+<img src="/Blog/images/histogram1.png" alt="example decode" />
 
 ## The Clever Solution
 - - - - - - - - - - - - -

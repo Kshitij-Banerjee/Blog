@@ -7,7 +7,7 @@ author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
 img: "angular_js.png"
 date: 2017-04-10
-color: bfbf40
+color: 90a4ae
 tags: Tutorial, AngularJS
 typej: Tutorial, AngularJS
 ---

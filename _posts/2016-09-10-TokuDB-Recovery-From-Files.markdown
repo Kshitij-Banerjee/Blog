@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "How to recover data from raw .tokudb files!"
-description: "Corrupted you tokudb mysql instance ? This post can help you recover the data from just the tokudb files."
+title:  "Reverse Engineer data from raw database files. "
+description: "How to recover data from raw .tokudb files! Corrupted you tokudb mysql instance ? This post can help you recover the data from just the tokudb files."
 author: "Kshitij Banerjee"
 avatar: "img/authors/K_icon.png"
-img : "tree.png"
+img : "toku_db.png"
 categories: Database
 categories: [Database, Reverse Engineering]
 color: 268bd2
