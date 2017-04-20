@@ -18,6 +18,75 @@ typej: Tutorial, Scala
 The object assigned to a val cannot be replaced, and the object assigned to a var can
 val is immutable. var is mutable.
 val is like final in java.
+When a val is declared as lazy , its initialization is deferred until it is accessed for the first time.
+
+### All expressions have a type
+Everything has a type.if/else statements and all.
+A thow expressions has a special type of `Nothing`, so if an if/else contains a throw, the type of the expession is the type of the other branch.
+
+### The Underscore
+
+Underscore is broadly used for
+- Wildcard/Joker
+    - `import java.util._`
+- Give me the variable, but I dont care about naming it. aka Anonymous parameters
+    - `List(1, 2, 3) map (_ + 2)`
+    - If a parameter occurs only once on the right-hand side of the => , you can replace it with an underscore: valueAtOneQuarter(3 * \_)
+- Unused/ignored variables
+    - `List(1, 2, 3) foreach { _ => println("Hi") }`
+- Varargs: will explain below
+- Pattern matching
+    ~~~~~~ scala
+    expr match {
+       case List(1,_,_) => " a list with three element and the first element is 1"
+       case List(_*)  => " a list with zero or more elements "
+       case Map[_,_] => " matches a map with any key type and any value type "
+       case _ =>
+    }
+    ~~~~~~
+
+### Comprehension, gaurds and yields
+~~~~ scala
+for (elem <- a if elem % 2 == 0 ) yield 2 * elem // doubles every even element and returns a list
+// same as
+a.filter(_ % 2 == 0).map(2 * _)
+~~~~
+
+### Objects
+Scala has no static methods or fields. Instead, you use the object construct.
+
+~~~~ scala
+class Account {
+   val id = Account.newUniqueNumber()
+   private var balance = 0.0
+   def deposit(amount: Double) { balance += amount }
+   ...
+}
+
+object Account { // The companion object
+   private var lastNumber = 0
+   private def newUniqueNumber() = { lastNumber += 1; lastNumber }
+}
+// The class and its companion object can access each other’s private features. They must be located in the same source file .
+~~~~
+* Use objects for singletons and utility methods.
+* As a home for utility functions or constants
+* As App starters
+~~~~ scala
+object Hello extends App {
+      println("Hello, World!")
+}
+~~~~
+
+### Closures
+A closure consists of code together with the definitions of any nonlocal variables that the code uses.
+These functions are actually implemented as objects of a class, with
+~~~~ scala
+def mulBy(factor : Double) = (x : Double) => factor * x
+val triple = mulBy(3)
+val half = mulBy(0.5)
+println(triple(14) + " " + half(14)) // Prints 42 7. Note the calls don't override themselves, they are seperate closures
+~~~~
 
 ### Partial Functions
 
@@ -86,8 +155,8 @@ override def receive: Receive = state(someInitialObject)
 ~~~~~
 
 The behaviour defined by `state` here takes as messages two case class instances for matching.
-_Note_: doMutation() refers to the class instance of type doMutation wheras a simple doMutation means the companion object.
 
+### Dependency Injection (guice)
 Bind.
 ~~~~~~ scala
 class GuiceModule(environment: Environment, configuration: Configuration)
@@ -111,7 +180,6 @@ class BooksController @Inject()(booksService: BooksService)
     // ...
  }
 ~~~~~~
-
 
 ### Collections
 
@@ -142,3 +210,31 @@ def myMethod(params: Any*) = ... //varargs parameter, use as an Array[Any]
 val list = Seq("a", 42, 3.14) //a Seq[Any]
 myMethod(list : _*)
 ~~~~~~~
+
+
+### Exceptions
+- `Try[A]` represents a computation that may result in a value of type A(Sucess(A)), if it is successful, or in some `Throwable` Failure(Throwable)Failure(Throwable) if something has gone wrong. (Notice the similarity with Optiona / Either)
+
+ ~~~~~~ scala
+ def parseURL(url: String): Try[URL] = Try(new URL(url))
+ parseURL("http://google.com")
+ ~~~~~~
+
+Above will result in a Success[URL] containing the created URL, whereas parseURL("garbage") will result in a Failure[URL] containing a MalformedURLException.
+Also, you can chain them, getOrElse them. Note that using `flatMap` does not create a nested `Try` structure while chaining.
+
+~~~~~~ scala
+val url = parseURL(Console.readLine("URL: ")) getOrElse new URL("http://duckduckgo.com")
+def inputStreamForURL(url: String): Try[InputStream] = parseURL(url).flatMap { u =>
+  Try(u.openConnection()).flatMap(conn => Try(conn.getInputStream))
+}
+~~~~~~
+
+### Implicit
+- Convert one type to the other automatically.
+    - If you define `implicit def int2Fraction(n: Int) = Fraction(n, 1)`
+    - `val result = 3 * Fraction(4, 5) // Calls int2Fraction(3) followed by multiplication with Fraction(4,5)`
+    - The conversion of 3 to Fraction happened automatically
+
+### Miscellaneous quirks
+- _Note_: doMutation() refers to the class instance of type doMutation wheras a simple doMutation means the companion object.
