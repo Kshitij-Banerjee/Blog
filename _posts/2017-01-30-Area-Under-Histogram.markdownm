@@ -64,6 +64,9 @@ For each min_i.....
 * _Corrollary_: Any area being considered on the right, with a min value larger than current j, will be binded at j.
 * So in our processing, for each value being considered, we need the set of values before it that are less than it.
 * The values of interest on the left form a monotonically increasing sequence with j being the largest value. (Values of interest here being possible values that may be of interest for the later array)
+* This solves the left side. Lets concretize with an example
+* If the array being evaluated is  : (1,6,2,56,_4_,23,7) [currently at 4]
+  * To know the value just less than 4 the only interesting part we need to retain is (1, 2). i.e, 6 and 56 are useless for calculation of 4, and have been ignored
 
 * Since, we are travelling from left to right, for each min value/ current value -  we do not know whether the right side of the array will have an element smaller than it.
   * So we have to keep it in memory until we get to know this value is useless.
@@ -76,10 +79,13 @@ For each min_i.....
   1. pop the elements larger to it (useless values)
   2. The first element smaller than the value is are leftmost extreme. The i to our min.
 
-* We can do the same thing from the right side of the array and we will get j to our min.
+* We can do the same thing from the right side of the array and we will get j to each of our min.
 
 * _Observation_ : If we observe the stack for each iteration i. What does it contain ?
-* A `monotonically increasing subsequence` with _i_ its max value. Notice how this becomes usefull later.
+  * A `monotonically increasing subsequence` with _i_ its max value. Notice how this becomes usefull later.
+
+* Code examples are in plenty. But here is an implementation I did a while back
+  * [https://github.com/Kshitij-Banerjee/CompetitiveCoding/blob/master/IB-LargestREctHistogram/IB-LargestREctHistogram/main.cpp](https://github.com/Kshitij-Banerjee/CompetitiveCoding/blob/master/IB-LargestREctHistogram/IB-LargestREctHistogram/main.cpp)
 
 ### What's the time complexity of one traversal ?
 - - - - - - -
