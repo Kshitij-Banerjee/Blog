@@ -15,14 +15,14 @@ typej: Tutorial, Scala
 ## Scala
 - - - - - - - - -
 ### var vs val
-The object assigned to a val cannot be replaced, and the object assigned to a var can
-val is immutable. var is mutable.
-val is like final in java.
-When a val is declared as lazy , its initialization is deferred until it is accessed for the first time.
+- The object assigned to a val cannot be replaced, and the object assigned to a var can
+- val is immutable. var is mutable.
+- val is like final in java.
+- When a val is declared as lazy , its initialization is deferred until it is accessed for the first time.
 
 ### All expressions have a type
-Everything has a type.if/else statements and all.
-A thow expressions has a special type of `Nothing`, so if an if/else contains a throw, the type of the expession is the type of the other branch.
+- Everything has a type. if/else statements and all.
+- A thow expressions has a special type of `Nothing`, so if an if/else contains a throw, the type of the expession is the type of the other branch.
 
 ### The Underscore
 
@@ -36,14 +36,16 @@ Underscore is broadly used for
     - `List(1, 2, 3) foreach { _ => println("Hi") }`
 - Varargs: will explain below
 - Pattern matching
-    ~~~~~~ scala
-    expr match {
-       case List(1,_,_) => " a list with three element and the first element is 1"
-       case List(_*)  => " a list with zero or more elements "
-       case Map[_,_] => " matches a map with any key type and any value type "
-       case _ =>
-    }
-    ~~~~~~
+
+~~~~~~ scala
+expr match {
+   case List(1,_,_) => " a list with three element and the first element is 1"
+   case List(_*)  => " a list with zero or more elements "
+   case Map[_,_] => " matches a map with any key type and any value type "
+   case _ =>
+}
+~~~~~~
+
 
 ### Comprehension, gaurds and yields
 ~~~~ scala
