@@ -1,4 +1,5 @@
 # Blog
 
-I blog about tech stuff mostly, but I think I plan to add random stuff as well.
-Mostly its like my notebook, where I keep writing what i'm learning or implementing.
+I blog about tech stuff mostly, but I think I do not restrict it to that. I may add things related to health, music etc if I deem it fit.
+
+Mostly its like my notebook, where I keep writing what I'm learning or implementing.
