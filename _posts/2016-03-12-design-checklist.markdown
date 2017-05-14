@@ -8,7 +8,7 @@ img: "Business-Checklist-ICV.jpg"
 color: 6c71c4
 ---
 
-  copiable direct link => [/2016/03/12/design-checklist.html](Blog/2016/03/12/design-checklist.html)
+  copiable direct link => [/2016/03/12/design-checklist.html](2016/03/12/design-checklist.html)
 
 List of topics that you should check off in your design
 =======================================================

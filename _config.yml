@@ -5,7 +5,7 @@ url: http://Kshitij-Banerjee.github.io/Blog
 permalink: ':title/'
 author: Kshitij-Banerjee
 markdown: kramdown
-baseurl: "/Blog"
+baseurl: ""
 
 
 sass:

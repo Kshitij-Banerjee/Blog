@@ -15,7 +15,7 @@ type: Algorithms, Data Structures
 ## Problem Statement:
 - - - - - - - - -
 _GfG quoted_: Find the largest rectangular area possible in a given histogram where the largest rectangle can be made of a number of contiguous bars. For simplicity, assume that all bars have same width and the width is 1 unit.
-<img src="/Blog/images/histogram1.png" alt="example decode" />
+<img src="/images/histogram1.png" alt="example decode" />
 
 ## The Clever Solution
 - - - - - - - - - - - - -
@@ -26,7 +26,7 @@ Sometimes, the nicest solutions come from clues we receive from the worst ones.
 * Iterate through all possible rectangles and calculate the area. How is the area bounded ?
 * What is the extra information we need other than the "free" variables i,j ?
 * We realize that min(i..j) is what constraints the area for every (i,j) pair.
-<img src="/Blog/images/minArea.jpg"/>
+<img src="/images/minArea.jpg"/>
 * For every possible combination of left and right extremes. Find the maximum value of `(j-i+1)*min(i..j)`
 * General way our brain thinks is :-
   * **Create every situation and try to find the value of the contraint that is needed to solve the problem.**
@@ -46,7 +46,7 @@ Hereon refered to as **inversion of constraint solution**
   * Little thought says, the first left most value less than the `current min` and similarly the first rightmost value that is lesser than the current min.
   * Try some examples, if the above is difficult to validate.
 
-<img src="/Blog/images/extreme_for_min.jpg"/>
+<img src="/images/extreme_for_min.jpg"/>
   * This is still O(n^2)
 
 * So now we need to see if we can find a clever way to find the first left and right values lesser than the current value.
