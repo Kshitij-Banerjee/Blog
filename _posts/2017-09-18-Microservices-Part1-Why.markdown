@@ -5,7 +5,7 @@ description: "The sneaky details around Spring Cloud Netflix, Zuul, Eureka and s
 name: "The sneaky details around Spring Cloud Netflix, Zuul, Eureka and setting things up the right way"
 author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
-img: "spring_cloud.png"
+img: "Microservices_Main.png"
 date: 2017-09-18
 color: 5e35b1
 tags: Tutorial, Spring Cloud Netflix
@@ -245,8 +245,9 @@ Design patterns are born. Some companies are benign enough to share these implem
 
 Netflix integrated with Spring, our favourite java platform, and gave us these goodies.
 
-Let me share my understanding of this in the next post ... Stay tuned.
+Let me share my understanding of this in the next post ...  
 
-
+Here: [PART-2](../Microservices-Part2-Spring-Cloud-Netflix)
+---------------
 
 
