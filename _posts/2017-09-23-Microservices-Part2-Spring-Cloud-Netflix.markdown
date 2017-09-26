@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Microservices with Spring Cloud"
+title:  "Microservices - Part 2 - Spring Cloud Netflix"
 description: "The sneaky details around Spring Cloud Netflix, Zuul, Eureka and setting things up the right way"
 name: "The sneaky details around Spring Cloud Netflix, Zuul, Eureka and setting things up the right way"
 author: Kshitij Banerjee
