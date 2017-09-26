@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Microservices with Spring Cloud"
-description: "The sneaky details around Spring Cloud Netflix, Zuul, Eureka and setting things up the right way"
-name: "The sneaky details around Spring Cloud Netflix, Zuul, Eureka and setting things up the right way"
+title:  "Microservices - Why we need them"
+description: "What is the whole buzz. What are the pitfalls and how to avoid them"
+name: "What is the whole buzz. What are the pitfalls and how to avoid them"
 author: Kshitij Banerjee
 avatar: "img/authors/K_icon.png"
 img: "Microservices_Main.png"
